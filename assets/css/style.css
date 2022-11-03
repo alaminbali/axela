@@ -14597,14 +14597,18 @@ body.sal-disabled [data-sal|=flip] {
   margin-left: 30px;
 }
 
-.header-one.three .header-right {
-  display: flex;
-  align-items: center;
-  padding: 11px 0;
-  justify-content: flex-end;
+@media only screen and (max-width: 1199px) {
+  .header-one.three .header-right {
+    display: flex;
+    align-items: center;
+    padding: 11px 0;
+    justify-content: flex-end;
+  }
 }
-.header-one.three .thumbnail img {
-  padding: 18px 0;
+@media only screen and (max-width: 1199px) {
+  .header-one.three .thumbnail img {
+    padding: 18px 0;
+  }
 }
 
 body {
@@ -14633,7 +14637,7 @@ body {
 @media only screen and (max-width: 575px) {
   .side-bar {
     width: 315px;
-    padding: 40px 20px;
+    padding: 40px;
   }
 }
 
@@ -19321,7 +19325,7 @@ p.disc {
 /* Loader Styles start here */
 .loader-wrapper {
   --line-width: .5px;
-  --curtain-color: #eeeffa;
+  --curtain-color: #f5f7ff;
   --outer-line-color: #7883e6;
   --middle-line-color: #46459d;
   --inner-line-color: var(--color-primary);

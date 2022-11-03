@@ -26,7 +26,7 @@ body{
     overflow-y: auto;
     @media #{$large-mobile} {
         width: 315px;
-        padding: 40px 20px;
+        padding: 40px;
     }
 }
 .side-bar.show {
