@@ -1,0 +1,125 @@
+
+
+.header-one{
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    &.three{
+        position: relative;
+    }
+    .thumbnail{
+        img{
+            padding: 42px 0;
+        }
+    }
+    .main-header{
+        display: flex;
+        justify-content: center;
+        margin-right: -70px;
+        .main-nav{
+            .mainmenu{
+                margin: 0;
+                display: flex;
+                li{
+                    margin: 0 17px;
+                    a{
+                        padding: 54px 0 20px 0;
+                        display: inline-block;
+                        color: #111A2E;
+                        font-weight: 500;
+                        font-size: 16px;
+                        font-family: var(--font-primary);
+                    }
+                }
+            }
+        }
+    }
+    .header-right{
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+        justify-content: flex-end;
+        .call-btn{
+            svg{
+                margin-left: 7px;
+                path{
+                    transition: var(--transition);
+                }
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+        .menu-btn{
+            margin-left: 20px;
+            padding: 18px 18px;
+            &:hover{
+                svg{
+                    rect{
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sticky{
+    .header-right{
+        .rts-btn{
+            &::before{
+                background: #EFEFFE !important;
+                border-radius: 11px !important;
+            }
+        }
+    }
+    &.header-one .thumbnail img {
+        padding: 17px 0;
+    }
+    &.header-one .main-header .main-nav .mainmenu li a {
+        padding: 29px 0;
+    }
+    &.header-one .header-right {
+        padding: 14px 0;
+    }
+}
+
+.header-top-start{
+    &.header-three{
+        background: var(--color-primary);
+        padding: 10px 0;
+        .left{
+            p{
+                color: #fff;
+                a{
+                    transition: .3s;
+                    &:hover{
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end ;
+            p{
+                margin-bottom: 0;
+                color: #fff;
+                a{
+                    transition: .3s;
+                    &:hover{
+                        color: #000;
+                    }
+                }
+                &.mail{
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
