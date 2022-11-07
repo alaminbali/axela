@@ -88,18 +88,19 @@
     z-index: 1;
     &::after{
         position: absolute;
-        content: '';
-        top: -45%;
-        left: -35%;
+        content: "";
+        top: -64%;
+        left: -70%;
         background-image: url(../images/banner/shape/03.png);
-        height: 500px;
-        width: 500px;
+        height: 800px;
+        width: 100%;
         background-size: cover;
         animation: jump-3 8s linear infinite;
         z-index: -1;
+        background-repeat: no-repeat;
         @media #{$laptop-device} {
-            top: -45%;
-            left: -16%;
+            top: -64%;
+            left: -57%;
         }
         @media #{$smlg-device} {
             top: -56%;

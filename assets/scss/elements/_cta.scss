@@ -45,11 +45,11 @@
         position: absolute;
         z-index: -1;
         background-image: url(../images/cta/shape/02.png);
-        content: '';
-        left: 73%;
+        content: "";
+        left: 69%;
         top: 40%;
-        height: 184%;
-        width: 100%;
+        height: 167%;
+        width: 91%;
         transform: translate(-50%, -50%);
         background-repeat: no-repeat;
         background-size: contain;
@@ -183,7 +183,7 @@
                         line-height: 61px;
                     }
                     @media #{$large-mobile} {
-                        font-size: 36px;
+                        font-size: 30px;
                         line-height: 40px;
                     }
                 }
@@ -193,6 +193,12 @@
                 align-items: center;
                 background: #fff;
                 border-radius: 15px;
+                @media #{$md-layout} {
+                    margin-top: 30px;
+                }
+                @media #{$sm-layout} {
+                    margin-top: 20px;
+                }
                 @media #{$large-mobile} {
                     flex-direction: column;
                 }
