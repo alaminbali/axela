@@ -3,6 +3,12 @@
 
 .banner-one-content-wrapper{
     margin-top: 110px;
+    @media #{$smlg-device} {
+        margin-top: 0;
+    }
+    @media #{$large-mobile} {
+        margin-top: 30px;
+    }
     span{
         &.pre-title{
             padding: 10px 29px;
@@ -14,6 +20,9 @@
             letter-spacing: 0.1em;
             font-weight: 700;
             text-transform: uppercase;
+            @media #{$small-mobile} {
+                font-size: 12px;
+            }
         }
     }
     h1{
@@ -24,6 +33,14 @@
             line-height: 82px;
             color: #111A2E;
             margin-bottom: 24px;
+            @media #{$smlg-device} {
+                font-size: 46px;
+                line-height: 55px;
+            }
+            @media #{$large-mobile} {
+                font-size: 32px;
+                line-height: 42px;
+            }
         }
     }
 }
@@ -55,6 +72,10 @@
     position: relative;
     height: 100%;
     width: 100%;
+    @media #{$smlg-device} {
+        height: 55%;
+        width: 75%;
+    }
     img{
         position: absolute;
         top: -350px;
@@ -76,6 +97,14 @@
         background-size: cover;
         animation: jump-3 8s linear infinite;
         z-index: -1;
+        @media #{$laptop-device} {
+            top: -45%;
+            left: -16%;
+        }
+        @media #{$smlg-device} {
+            top: -56%;
+            left: -16%;
+        }
     }
     &::before{
         position: absolute;
@@ -90,6 +119,9 @@
         z-index: 3;
         background-repeat: no-repeat;
         z-index: -1;
+        @media #{$smlg-device} {
+            bottom: -48%;
+        }
     }
 }
 
@@ -106,6 +138,12 @@
         height: 88px;
         background-repeat: no-repeat;
         animation: jump-1 5s linear infinite;
+        @media #{$md-layout} {
+            display: none;
+        }
+        @media #{$sm-layout} {
+            display: none;
+        }
     }
     &::before{
         position: absolute;
@@ -139,6 +177,13 @@ a{
     }
 }
 
+.vedio-area-home-two{
+    a{
+        &::before{
+            display: none;
+        }
+    }
+}
 
 .banner-two-parent{
     position: relative;
@@ -147,8 +192,8 @@ a{
         position: absolute;
         content: '';
         background-image: url(../images/banner/shape/07.png);
-        left: -13%;
-        top: -10%;
+        left: -21%;
+        top: -7%;
         height: 100%;
         width: 100%;
         background-repeat: no-repeat;
@@ -160,8 +205,8 @@ a{
         position: absolute;
         content: '';
         background-image: url(../images/banner/shape/08.png);
-        right: -55%;
-        top: 23%;
+        right: -64%;
+        top: 15%;    
         height: 100%;
         width: 100%;
         background-repeat: no-repeat;
@@ -217,6 +262,15 @@ a{
     .banner-content-area{
         padding-top: 180px;
         padding-left: 30px;
+        @media #{$md-layout} {
+            padding-top: 30px;
+        }
+        @media #{$sm-layout} {
+            padding-top: 30px;
+        }
+        @media #{$large-mobile} {
+            padding-left: 15px;
+        }
         .sub-title{
             font-weight: 700;
             font-size: 14px;
@@ -245,11 +299,22 @@ a{
             color: #111A2E;
             margin-top: 18px;
             margin-bottom: 30px;
+            @media #{$sm-layout} {
+                font-size: 46px;
+                line-height: 47px;
+            }
+            @media #{$large-mobile} {
+                font-size: 29px;
+                line-height: 10px;
+            }
             span{
                 font-weight: 400;
                 font-size: 56px;
                 line-height: 78px;
                 color: #111A2E;
+                @media #{$large-mobile} {
+                    font-size: 34px;
+                }
             }
         }
         p{
@@ -278,6 +343,9 @@ a{
         height: 750px;
         position: relative;
         z-index: 1;
+        @media #{$sm-layout} {
+            height: 550px;
+        }
         &::after{
             position: absolute;
             content: '';
@@ -294,6 +362,9 @@ a{
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
+            @media #{$large-mobile} {
+                width: 100%;
+            }
             .inner{
                 span{
                     position: relative;
@@ -323,6 +394,30 @@ a{
                         -webkit-text-stroke-color: white;
                         text-transform: uppercase;
                         font-size: 280px;
+                        @media #{$laptop-device} {
+                            left: -41%;
+                            font-size: 240px;
+                        }
+                        @media #{$smlg-device} {
+                            font-size: 180px;
+                            left: -37%;
+                        }
+                        @media #{$md-layout} {
+                            font-size: 140px;
+                            left: -28%;
+                        }
+                        @media #{$sm-layout} {
+                            font-size: 120px;
+                            left: -24%;
+                        }
+                        @media #{$large-mobile} {
+                            font-size: 80px;
+                            left: 11%;
+                        }
+                        @media #{$small-mobile} {
+                            font-size: 60px;
+                            left: 7%;
+                        }
                     }
                 }
                 p{
@@ -341,6 +436,22 @@ a{
                     line-height: 82px;
                     color: #fff;
                     margin-top: 17px;
+                    @media #{$smlg-device} {
+                        font-size: 50px;
+                        line-height: 70px;
+                    }
+                    @media #{$md-layout} {
+                        font-size: 36px;
+                        line-height: 46px;                    
+                    }
+                    @media #{$sm-layout} {
+                        font-size: 36px;
+                        line-height: 46px;                    
+                    }
+                    @media #{$small-mobile} {
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
                 }
                 a{
                     &.rts-btn{
@@ -389,4 +500,5 @@ a{
         }
     }
 }
+
 

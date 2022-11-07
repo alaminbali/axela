@@ -1,12 +1,12 @@
 
 // working process style hear
 
-
 .single-working-process-one{
     background-image: url(../images/working-process/01.png);
     height: 304px;
     position: relative;
     background-repeat: no-repeat;
+    background-size: cover;
     &::after{ 
         position: absolute;
         content: "";
@@ -49,5 +49,14 @@
     &.bg-vedio-image{
         background-image: url(../images/vedio/01.jpg);
         height: 671px;
+        @media #{$large-mobile} {
+            background-image: url(../images/vedio/01.jpg);
+            /* height: max-content; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: auto;
+            height: 471px;
+        }
     }
 }

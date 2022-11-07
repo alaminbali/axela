@@ -22,14 +22,13 @@
             imJs.stickyHeader();
             imJs.backToTopInit();
             imJs.typeJS();
-            imJs.searchOpton();
             imJs.menuActive();
             imJs.metismenu();
             // imJs.smoothScroll();
             imJs.preloader();
         },
+        // done
         swiperActivation: function (){
-
           $(document).ready(function() {
             var swiper = new Swiper(".testimonial-1", {
               slidesPerView: 2.5,
@@ -59,10 +58,11 @@
                   slidesPerView: 2,
                 },
                 575: {
-                  slidesPerView: 2,
+                  slidesPerView: 1,
                 },
                 0: {
                   slidesPerView: 1,
+                  navigation: false,
                 }
               },
             });
@@ -98,20 +98,23 @@
                   slidesPerView: 5,
                 },
                 1300: {
-                  slidesPerView: 4,
+                  slidesPerView: 5,
                 },
                 991: {
-                  slidesPerView: 3,
+                  slidesPerView: 5,
                   
                 },
                 767: {
-                  slidesPerView: 2,
+                  slidesPerView: 4,
                 },
                 575: {
-                  slidesPerView: 2,
+                  slidesPerView: 3,
+                },
+                400: {
+                  slidesPerView: 3,
                 },
                 0: {
-                  slidesPerView: 1,
+                  slidesPerView: 2,
                 }
               },
             });
@@ -197,11 +200,6 @@
               slidesPerGroup: 1,
               loop: true,
               loopFillGroupWithBlank: true,
-              // centeredSlides: true,
-              // navigation: {
-              //   nextEl: ".swiper-button-next",
-              //   prevEl: ".swiper-button-prev",
-              // },
               pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -222,10 +220,10 @@
                   
                 },
                 767: {
-                  slidesPerView: 2,
+                  slidesPerView: 1,
                 },
                 575: {
-                  slidesPerView: 2,
+                  slidesPerView: 1,
                 },
                 0: {
                   slidesPerView: 1,
@@ -519,20 +517,7 @@
             }
           });
         },
-        searchOpton:function(){
-          $(document).on('click', '#search', function () {
-            $(".search-input-area").addClass("show");
-            $("#anywhere-home").addClass("bgshow");
-          });
-          $(document).on('click', '#close', function () {
-            $(".search-input-area").removeClass("show");
-            $("#anywhere-home").removeClass("bgshow");
-          });
-          $(document).on('click', '#anywhere-home', function () {
-            $(".search-input-area").removeClass("show");
-            $("#anywhere-home").removeClass("bgshow");
-          });
-        },
+        // done
         menuActive:function(){
           $(document).on('click', '#menu-btn', function () {
             $("#side-bar").addClass("show");
@@ -551,9 +536,11 @@
             $("#anywhere-home").removeClass("bgshow");
           });
         },
+        // done
         metismenu:function(){
           $('#mobile-menu-active').metisMenu();
         },
+        // done
         preloader:function(){
           window.addEventListener('load',function(){
             document.querySelector('body').classList.add("loaded")  

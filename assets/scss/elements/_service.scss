@@ -10,6 +10,10 @@
     border-radius: 15px;
     transition: .3s;
     box-shadow: 0px 14px 46px #E8EEF9;
+    height: 100%;
+    @media #{$sm-layout} {
+        padding: 20px;        
+    }
     &.home-three{
         box-shadow: 0px 19px 29px rgba(0, 0, 0, 0.07);
     }
@@ -41,11 +45,26 @@
 }
 
 
+.rts-single-service-one .icon img {
+    @media #{$large-mobile} {
+        max-width: 50px;
+    }
+}
+
 .appoinment-area-one{
     background: #FFFFFF;
     box-shadow: 0px 14px 46px #E8EEF9;
     border-radius: 20px;
     padding: 100px;
+    @media #{$md-layout} {
+        padding: 40px;
+    }
+    @media #{$sm-layout} {
+        padding: 30px;
+    }
+    @media #{$large-mobile} {
+        padding: 20px;
+    }
     .appoinment-left{
         padding-right: 20px;
         .communicate-area{
@@ -67,6 +86,9 @@
                     line-height: 24px;
                     color: #111A2E;
                     transition: .3s;
+                    @media #{$large-mobile} {
+                        font-size: 14px;
+                    }
                     &:hover{
                         color: var(--color-primary);
                     }
@@ -83,6 +105,12 @@
         }
     }
     .appoinment-right{
+        @media #{$md-layout} {
+            margin-top: 30px;
+        }
+        @media #{$sm-layout} {
+            margin-top: 30px;
+        }
         .single-input{
             label{
                 color: #111A2E;
@@ -144,8 +172,8 @@
         position: absolute;
         animation: shape-service-1 1s;
         background-image: url(../images/service/shape/02.png);
-        height: 483px;
-        width: 866.83px;
+        height: 604px;
+        width: 949.83px;
         background-size: contain;
         content: '';
         background-repeat: no-repeat;
@@ -159,6 +187,7 @@
     position: relative;
     .shape{
         position: absolute;
+        z-index: -1;
     }
     .shape-1{
         left: -39%;

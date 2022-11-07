@@ -9,6 +9,9 @@
         padding: 18px 50px;
         background: rgba(59, 56, 235, 0.1);
         border-radius: 20px 20px 0px 0px;
+        @media #{$large-mobile} {
+            padding: 18px 15px;
+        }
         .title{
             margin-bottom: 0;
             color: #3B38EB;
@@ -19,6 +22,9 @@
     }
     .pricing-body{
         padding: 35px 50px;
+        @media #{$large-mobile} {
+            padding: 18px 15px;
+        }
         .title{
             font-weight: 700;
             font-size: 40px;

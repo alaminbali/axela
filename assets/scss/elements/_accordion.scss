@@ -12,6 +12,9 @@
                     font-size: 17px;
                     line-height: 20px;
                     padding: 0 25px;
+                    @media #{$large-mobile} {
+                        font-size: 14px;
+                    }
                     &::after{
                         background-image: none;
                         content: '\f078';
@@ -28,6 +31,9 @@
                         font-size: 17px;
                         line-height: 20px;
                         color: #111A2E;
+                        @media #{$large-mobile} {
+                            font-size: 14px;
+                        }
                         &::after{
                             content: '\f077';
                             color: var(--color-primary);

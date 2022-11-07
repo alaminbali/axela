@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media #{$sm-layout} {
+        align-items: flex-start;
+        flex-direction: column;
+    }
     .title-area{
         .title{
             color: #fff;
@@ -17,6 +21,9 @@
     li{
         margin: 0;            
         margin-right: 28px;
+        @media #{$sm-layout} {
+            margin-right: 15px;
+        }
         &:last-child{
             margin-right: 0;
         }
@@ -42,7 +49,7 @@
 // tart single Product
 .shape-image-product{
     position: relative;
-    z-index: 1;
+    z-index: -1;
     img{
         position: absolute;
         left: -45%;
@@ -59,6 +66,7 @@
         img{
             border-radius: 20px 20px 0 0;
             transition: .5s;
+            width: 100%;
         }
         &:hover{
             img{
@@ -70,6 +78,9 @@
         padding: 50px;
         background: #fff;
         border-radius: 0 0 20px 20px;
+        @media #{$large-mobile} {
+            padding: 20px;
+        }
         span{
             color: #6F737B;
             font-size: 16px;
@@ -82,6 +93,12 @@
                 margin-bottom: 11px;
                 margin-top: 5px;
                 transition: .3s;
+                @media #{$sm-layout} {
+                    font-size: 26px;
+                }
+                @media #{$large-mobile} {
+                    font-size: 20px;
+                }
             }
             &:hover{
                 .title{
@@ -100,7 +117,7 @@
         position: absolute;
         content: '';
         right: -5%;
-        bottom: -5%;
+        bottom: -1%;
         height: 500px;
         width: 500px;
         background-size: contain;
@@ -116,6 +133,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media #{$large-mobile} {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 
@@ -271,11 +292,18 @@
 .swiper.testimonials-h2.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-backface-hidden {
     padding-bottom: 107px;
 }
+.swiper{
+    &.testimonials-h2{
+        padding-bottom: 80px;
+    }
+}
 
 
 .bgproject-area{
     background: #F1F4FC;
     .rts-product-one{
         box-shadow: 0px 21px 27px rgba(0, 0, 0, 0.03);
+        height: 100%;
+        background: #fff;
     }
 }

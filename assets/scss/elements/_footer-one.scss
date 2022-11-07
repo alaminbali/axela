@@ -19,6 +19,7 @@
             line-height: 28px;
             color: #949494;
             margin-bottom: 25px;
+            padding-right: 30px;
         }
     }
 }
@@ -69,6 +70,18 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media #{$small-mobile} {
+        flex-direction: column;
+    }
+    @media #{$md-layout} {
+        padding-left: 0;
+        margin-top: 25px;
+    }
+    @media #{$sm-layout} {
+        padding-left: 0;
+        margin-top: 25px;
+    }
     .single-wized-footer{
         .title-heading{
             color: #fff;
@@ -78,14 +91,14 @@
             list-style: none;
             padding-left: 0;
             li{
-                margin-bottom: 13px;
+                margin-bottom: 17px;
                 a{
                     color: #949494;
                     font-weight: 400;
                     font-size: 18px;
                     transition: .3s;
                     &:hover{
-                        color: var(--color-primary);
+                        color: #fff;
                     }
                 }
             }
@@ -95,6 +108,9 @@
 .bg-footer-one-shape{
     position: relative;
     z-index: 1;
+    @media #{$sm-layout} {
+        display: none;
+    }
     .wrapper{
         position: absolute;
         width: 100%;
@@ -118,12 +134,27 @@
     .copyu-right-wrapper{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        @media #{$large-mobile} {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: left;
+        }
         .single{
+            @media #{$sm-layout} {
+                flex-basis: 33%;
+            }
             a{
                 color: #fff;
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 21px;
+                transition: .3s;
+                &:hover{
+                    color: var(--color-primary);
+                }
             }
             p{
                 color: #949494;
@@ -181,7 +212,24 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media #{$large-mobile} {
+        flex-direction: column;
+    }
+    @media #{$smlg-device} {
+        padding-left: 0;
+        margin-top: 30px;
+    }
     .single-wized{
+        @media #{$smlg-device} {
+            margin-right: 10px;
+        }
+        @media #{$large-mobile} {
+            margin-bottom: 15px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
         .title-footer{
             position: relative;
             margin-bottom: 30px;
@@ -240,6 +288,10 @@
     .nav{
         margin: 0;
         padding: 0;
+        @media #{$sm-layout} {
+            justify-content: center;
+            margin-bottom: 10px;
+        }
         li{
             margin: 0;
             padding: 0;
@@ -258,6 +310,9 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        @media #{$sm-layout} {
+            justify-content: center;
+        }
         p{
             &.disc{
                 font-weight: 400;
@@ -289,6 +344,9 @@
             width: 100%;
             background: #111A2E;
             left: 0;
+            @media #{$smlg-device} {
+                display: none;
+            }
         }
         &::before{
             position: absolute;
@@ -298,17 +356,26 @@
             width: 1px;
             background: #111A2E;
             right: 0;
+            @media #{$smlg-device} {
+                display: none;
+            }
         }
         .title{
             color: #fff;
             padding-left: 50px;
             margin-bottom: 0;
+            @media #{$smlg-device} {
+                padding-left: 10px;
+            }
         }
     }
     .body{
         position: relative;
         padding-top: 25px;
         height: 227px;
+        @media #{$sm-layout} {
+            height: auto;
+        }
         &::after{
             position: absolute;
             bottom: 0;
@@ -317,6 +384,9 @@
             width: 100%;
             background: #111A2E;
             left: 0;
+            @media #{$smlg-device} {
+                display: none;
+            }
         }
         &::before{
             position: absolute;
@@ -326,10 +396,19 @@
             width: 1px;
             background: #111A2E;
             right: 0;
+            @media #{$smlg-device} {
+                display: none;
+            }
         }
         &.left{
             padding-right: 50px;
             height: 227px;
+            @media #{$md-layout} {
+               height: auto; 
+            }
+            @media #{$sm-layout} {
+               height: auto; 
+            }
             p{
                 &.disc{
                     color: #fff;
@@ -381,6 +460,15 @@
 .footer-right-three{
     display: flex;
     justify-content: space-between;
+    @media #{$md-layout} {
+    flex-wrap: wrap;        
+    }
+    @media #{$sm-layout} {
+    flex-wrap: wrap;        
+    }
+    @media #{$large-mobile} {
+        flex-direction: column;
+    }
     .single-footer-three-wized{
         .header{
             &.right{
@@ -391,6 +479,12 @@
         }
         .body{
             padding: 25px 50px;
+            @media #{$laptop-device} {
+                padding: 25px 26px;
+            }
+            @media #{$smlg-device} {
+                padding: 25px 10px;
+            }
             .rts-footer-contact{
                 display: flex;
                 align-items: center;
@@ -421,6 +515,7 @@
             }
             form{
                 position: relative;
+                max-width: max-content;
                 input{
                     background: #FFFFFF;
                     border-radius: 15px;
@@ -428,6 +523,7 @@
                     width: 295px;
                     border: 1px solid transparent;
                     color: #000;
+                    padding-left: 25px;
                     &:focus{
                         border: 1px solid var(--color-primary);
                     }
@@ -466,12 +562,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media #{$large-mobile} {
+            flex-direction: column;
+        }
         .left{
             a{
                 color: #fff;
                 transition: .3s;
                 &:last-child{
                     margin-left: 10px;
+                    @media #{$sm-layout} {
+                        margin-left: 0;
+                    }
                 }
                 &:hover{
                     color: var(--color-primary);

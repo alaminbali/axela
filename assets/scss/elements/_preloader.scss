@@ -117,3 +117,14 @@
     transform:translateY(-100%);
     transition: all .3s 1s ease-out;
   }
+
+
+  ::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: var(--color-primary);
+  }
+  
+  ::selection {
+    color: #fff;
+    background: var(--color-primary);
+  }

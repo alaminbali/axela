@@ -85,6 +85,9 @@
 
     .product-contact-wrapper{
         padding: 30px 30px 30px 35px;
+        @media #{$sm-layout} {
+            padding: 10px;
+        }
         span{
             margin-bottom: 15px;
         }

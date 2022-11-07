@@ -504,13 +504,30 @@ p.disc {
     display: flex;
     align-items: center;
     box-shadow: 0px 18px 33px rgba(15, 15, 45, 0.05);
+    height: 100%;
+    @media #{$md-layout} {
+        align-items: flex-start;
+        padding: 20px;
+    }
+    @media #{$sm-layout} {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+        align-items: flex-start;
+    }
     .thumbnail{
         overflow: hidden;
         display: block;
         border-radius: 15px;
+        @media #{$sm-layout} {
+            width: 100%;
+        }
         img{
             transition: .3s;
             border-radius: 15px;
+            @media #{$sm-layout} {
+                width: 100%;
+            }
         }
         &:hover{
             img{
@@ -520,9 +537,16 @@ p.disc {
     }
     .inner{
         margin-left: 30px;
+        @media #{$md-layout} {
+            margin-left: 15px;
+        }
+        @media #{$sm-layout} {
+            margin-left: 0;
+            margin-top: 15px;
+        }
         span{
             color: #6F737B;
-            font-weight: 500;
+            font-weight: 400;
             font-size: 16px;
             line-height: 19px;
         }
@@ -533,6 +557,9 @@ p.disc {
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 29px;
+                @media #{$md-layout} {
+                    font-size: 20px;
+                }
             }
         }
     }

@@ -16,6 +16,10 @@
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
+    &:active{
+        border: none !important;
+        box-shadow: none !important;
+    }
     &::before{
         content: "";
         position: absolute;
@@ -110,6 +114,10 @@ $btn-space-left: ($height/2);
   letter-spacing: 1px;
   transition: all 200ms ease-in;
   position: relative;
+  @media #{$large-mobile} {
+    margin-left: 0 !important;
+    margin-top: 37px;
+  }
   span.icon{
     display: block;
     position: relative;
@@ -170,6 +178,10 @@ $btn-space-left: ($height/2);
     &.button{
         display: flex;
         align-items: center;
+        @media #{$large-mobile} {
+            align-items: flex-start;
+            flex-direction: column;
+        }
     }
 }
 
