@@ -24,7 +24,7 @@
             imJs.typeJS();
             imJs.menuActive();
             imJs.metismenu();
-            // imJs.smoothScroll();
+            imJs.smoothScroll();
             imJs.preloader();
         },
         // done
@@ -546,6 +546,17 @@
             document.querySelector('body').classList.add("loaded")  
           });  
         },
+        // pne page scroll top
+        smoothScroll: function (e) {
+          $(document).on('click', '.onepage a[href^="#"]', function (event) {
+            event.preventDefault();
+        
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 2000);
+          });
+        }
+        // smooth scroll one page stop
 
     }
   
