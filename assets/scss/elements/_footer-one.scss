@@ -610,3 +610,95 @@
         }
     }
 }
+
+
+// fooetr four astyle hear
+
+.footer-four-bg{
+    background: #18191B;
+}
+.footer-one-left{
+    &.four{
+        .contact-area{
+            span{
+                display: block;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                font-family: var(--font-secondary);
+                margin-bottom: 15px;
+                letter-spacing: .5px;
+            }
+            a{
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 36px;
+                color: #fff;
+                font-family: var(--font-secondary);
+            }
+        }
+        .social-area{
+            margin-top: 22px;
+            li{
+                margin-right: 42px;
+                a{
+                    &::after{
+                        background: transparent;
+                        border: 1px solid #2C2C2C;
+                        width: 44px;
+                        height: 44px;
+                        transition: .3s;
+                    }
+                    &:hover{
+                        &::after{
+                            background: var(--color-primary);
+                            border: 1px solid var(--color-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-right-one{
+    &.four{
+        .single-wized-footer{
+            .list{
+                margin-left: 20px;
+                li{
+                    a{
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            left: -18px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            height: 6px;
+                            width: 6px;
+                            border-radius: 50%;
+                            background: #6F737B;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.rts-copyright-area{
+    &.footer-four{
+        background: #18191B;
+        border-top: 1px solid #222326;
+        .left{
+            &.single{
+                color: #fff;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+    }
+}

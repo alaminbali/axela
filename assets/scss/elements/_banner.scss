@@ -503,3 +503,183 @@ a{
 }
 
 
+// banner four style hear
+
+.fixed-images{
+    background-attachment: fixed;
+}
+
+.rts-banner-four{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 820px;
+    .shape-area{
+        position: absolute;
+        bottom: -70%;
+        left: -8%;
+        z-index: -1;
+        animation: jump-3 20s linear infinite;
+        img{
+            width: 1117px;
+            height: 1117px;
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: -1;
+    }
+}
+.banner-four-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40%;
+    .title{
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 90px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        span{
+            font-weight: 100;
+        }
+    }
+    .button-area{
+        margin-left: auto;
+        button{
+            position: relative;
+            transition: .3s;
+            span{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                min-width: max-content;
+                font-family: var(--font-secondary); 
+                transition: .3s;           
+            }
+            &:hover{
+                transform: scale(.9);
+                span{
+                    transform: translate(-50%, -50%) scale(.9);
+                }
+            }
+        }
+    }
+}
+.title-area{
+    &.digital{
+        .title{
+            letter-spacing: 0.2em;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;  
+            text-transform: uppercase;
+        }
+    }
+}
+
+// marque text
+
+.marquee_text{
+    font-weight: 100;
+    font-size: 230px;
+    line-height: 276px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    color: #111A2E;
+    opacity: 0.06;
+    overflow-x: hidden;
+}
+
+
+.rts-banner-five{
+    height: 880px;
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(23, 23, 23, 0.65);
+        z-index: -1;
+    }
+}
+
+.banner-five-content{
+    display: flex;
+    margin-top: 37%;
+    .inner{
+        .title{
+            color: #fff;
+            font-weight: 700;
+            font-size: 80px;
+            line-height: 90px;
+            span{
+                font-weight: 300;
+                font-size: 48px;
+                line-height: 90px;
+            }
+        }
+        p{
+            &.disc{
+                color: rgba(255, 255, 255, 0.8);
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+.rts-banner-five-area{
+    .swiper-button-wrapper{
+        .swiper-button-next{
+            right: 16%;
+            top: 83%;
+            &::after{
+                content: '';
+                background: transparent;
+                background-image: url(../images/banner/shape/arrow-r.svg);
+                color: #fff;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 40px;
+                height: 65px;   
+            }
+        }
+        .swiper-button-prev{
+            right: 21%;
+            top: 83%;
+            left: auto;
+            &::after{
+                content: '';
+                background: transparent;
+                background-image: url(../images/banner/shape/arrow-l.svg);
+                color: #fff;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 40px;
+                height: 65px;   
+            }
+        }
+    }
+}
+
+

@@ -261,3 +261,57 @@
         }
     }
 }
+
+
+
+// proaduct imdex four area
+
+.rts-product-area{
+    .thumbnail{
+        max-width: max-content;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        img{
+            max-width: max-content;
+            transition: .3s;
+            &.icon{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) scale(0);
+            }
+        }
+        &:hover{
+            img{
+                transform: scale(.95);
+                &.icon{
+                    transform: translate(-50%, -50%) scale(1);
+                }
+            }
+        }
+    }
+    .inner{
+        margin-top: 30px;
+        span{
+            margin-bottom: 8px;
+            display: block;
+            color: #3B38EB;
+        }
+        .title{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+            color: #111A2E;
+            transition: .3s;
+        }
+        a{
+            &:hover{
+                .title{
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}

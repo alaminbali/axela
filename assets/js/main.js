@@ -24,8 +24,11 @@
             imJs.typeJS();
             imJs.menuActive();
             imJs.metismenu();
-            imJs.smoothScroll();
             imJs.preloader();
+            imJs.smoothScroll();
+            imJs.onePageNav();
+            imJs.marqueActivation();
+            imJs.wowActive();
         },
         // done
         swiperActivation: function (){
@@ -75,6 +78,46 @@
                   longSwipes: false,
                   effect: 'fade',
                   speed:500,
+                  autoplay: {
+                      delay: 4000,
+                  },                
+                });
+            });
+            $(document).ready(function() {
+              var swiper = new Swiper(".mySwiperBanner-five", {
+                  loop: false,
+                  loopedSlides: 50,
+                  autoHeight: true,
+                  shortSwipes: false,
+                  longSwipes: false,
+                  effect: 'fade',
+                  speed:500,
+                  loop: true,
+                  loopFillGroupWithBlank: true,
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+                  autoplay: {
+                      delay: 4000,
+                  },                
+                });
+            });
+            $(document).ready(function() {
+              var swiper = new Swiper(".testimonials-h5", {
+                  loop: false,
+                  loopedSlides: 50,
+                  autoHeight: true,
+                  shortSwipes: false,
+                  longSwipes: false,
+                  // effect: 'fade',
+                  speed:500,
+                  loop: true,
+                  loopFillGroupWithBlank: true,
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
                   autoplay: {
                       delay: 4000,
                   },                
@@ -546,7 +589,7 @@
             document.querySelector('body').classList.add("loaded")  
           });  
         },
-        // pne page scroll top
+       
         smoothScroll: function (e) {
           $(document).on('click', '.onepage a[href^="#"]', function (event) {
             event.preventDefault();
@@ -555,11 +598,37 @@
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 2000);
           });
-        }
-        // smooth scroll one page stop
+        },
+        
+        onePageNav: function (e) {
+          $(document).ready(function() {
+            var nav = $('#nav');
+            if(nav.length){
+              $('#nav').onePageNav();
+            }
+          });
+        },
+        marqueActivation: function (e) {
+          $('.marquee_text').marquee({
+            direction: 'left',
+            duration: 50000,
+            gap: 50,
+            delayBeforeStart: 0,
+            duplicated: true,
+            startVisible: true
+        });
+        },
+        
+        wowActive: function () {
+          new WOW().init();
+        },
+
+
+
 
     }
   
     imJs.m();
   })(jQuery, window)  
+
   
