@@ -71,6 +71,7 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+
     @media #{$small-mobile} {
         flex-direction: column;
     }
@@ -81,6 +82,11 @@
     @media #{$sm-layout} {
         padding-left: 0;
         margin-top: 25px;
+    }
+    &.four{
+        @media #{$smlg-device} {
+            padding-left: 0;
+        }
     }
     .single-wized-footer{
         .title-heading{
@@ -698,6 +704,9 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 21px;
+                @media #{$large-mobile} {
+                    padding: 10px 0;
+                }
             }
         }
     }

@@ -399,3 +399,15 @@ header{
     max-width: 1620px;
     margin: auto;
 }
+
+.header-one{
+    &.five.sticky{
+        .mainmenu{
+            li{
+                a{
+                    color: #000000 !important;
+                }
+            }
+        }
+    }
+}

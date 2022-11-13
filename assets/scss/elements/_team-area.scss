@@ -636,7 +636,7 @@ p.disc {
                 z-index: 5;
                 .title{
                     color: #fff;
-                    margin-bottom: 5px;
+                    margin-bottom: 0px;
                 }
                 span{
                     color: rgba(255, 255, 255, 0.308);
@@ -673,6 +673,10 @@ p.disc {
             line-height: 70px;
             color: #111A2E;
             margin-top: 0;
+            @media #{$large-mobile} {
+                font-size: 43px;
+                line-height: 41px;
+            }
         }
         a{
             &.call-btn{
@@ -713,6 +717,10 @@ p.disc {
             line-height: 70px;
             color: #111A2E;
             margin-top: 0;
+            @media #{$large-mobile} {
+                font-size: 43px;
+                line-height: 41px;
+            }
         }
     }
 }

@@ -73,6 +73,7 @@
               var swiper = new Swiper(".mySwiperBanner-three", {
                   loop: false,
                   loopedSlides: 50,
+                  grabCursor: true,
                   autoHeight: true,
                   shortSwipes: false,
                   longSwipes: false,
@@ -86,6 +87,7 @@
             $(document).ready(function() {
               var swiper = new Swiper(".mySwiperBanner-five", {
                   loop: false,
+                  grabCursor: true,
                   loopedSlides: 50,
                   autoHeight: true,
                   shortSwipes: false,
@@ -608,22 +610,23 @@
             }
           });
         },
+        
         marqueActivation: function (e) {
-          $('.marquee_text').marquee({
-            direction: 'left',
-            duration: 50000,
-            gap: 50,
-            delayBeforeStart: 0,
-            duplicated: true,
-            startVisible: true
-        });
+          if('.marquee_text'.length){
+            $('.marquee_text').marquee({
+              direction: 'left',
+              duration: 50000,
+              gap: 50,
+              delayBeforeStart: 0,
+              duplicated: true,
+              startVisible: true,
+            });
+          }
         },
         
         wowActive: function () {
           new WOW().init();
         },
-
-
 
 
     }

@@ -130,11 +130,26 @@
     position: relative;
     background-attachment: fixed;
     z-index: 1;
+    @media #{$sm-layout} {
+        height: 500px;
+    }
+    @media #{$small-mobile} {
+        height: 400px;
+    }
     img{
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        @media #{$large-mobile} {
+            height: 28%;
+            width: 18%;
+        }
+        @media #{$small-mobile} {
+            height: 22%;
+            width: 25%;
+            top: 41%;
+        }
     }
     &::after{
         position: absolute;

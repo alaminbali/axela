@@ -272,9 +272,23 @@
         overflow: hidden;
         display: block;
         position: relative;
+        @media #{$md-layout} {
+            max-width: 100%;
+        }
+        @media #{$sm-layout} {
+            max-width: 100%;
+        }
         img{
-            max-width: max-content;
+            max-width: 100%;
             transition: .3s;
+            @media #{$md-layout} {
+                max-width: 100%;
+                width: 100%;
+            }
+            @media #{$sm-layout} {
+                max-width: 100%;
+                width: 100%;
+            }
             &.icon{
                 position: absolute;
                 left: 50%;
@@ -312,6 +326,19 @@
                     color: var(--color-primary);
                 }
             }
+        }
+    }
+}
+
+
+
+.rts-product-area{
+    &.inner{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0;
+        @media #{$smlg-device} {
+            display: block;
         }
     }
 }
