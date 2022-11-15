@@ -272,15 +272,32 @@
         overflow: hidden;
         display: block;
         position: relative;
+        &:hover{
+            img.img-1{
+                -webkit-clip-path: inset(10px);
+                clip-path: inset(10px);
+            }
+            .icon{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                transition: .3s;
+            }
+        }
         @media #{$md-layout} {
             max-width: 100%;
         }
         @media #{$sm-layout} {
             max-width: 100%;
         }
-        img{
-            max-width: 100%;
-            transition: .3s;
+        img.img-1{
+            display: inline-block!important;
+            transition: -webkit-clip-path 1s cubic-bezier(.39,.58,.57,1);
+            transition: clip-path 1s cubic-bezier(.39,.58,.57,1);
+            transition: clip-path 1s cubic-bezier(.39,.58,.57,1),-webkit-clip-path 1s cubic-bezier(.39,.58,.57,1);
+            -webkit-clip-path: inset(0);
+            clip-path: inset(0);
             @media #{$md-layout} {
                 max-width: 100%;
                 width: 100%;
@@ -289,19 +306,17 @@
                 max-width: 100%;
                 width: 100%;
             }
-            &.icon{
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%) scale(0);
-            }
+        }
+        .icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: .3s;
         }
         &:hover{
-            img{
-                transform: scale(.95);
-                &.icon{
-                    transform: translate(-50%, -50%) scale(1);
-                }
+            .icon{
+                transform: translate(-50%, -50%) scale(1);
             }
         }
     }

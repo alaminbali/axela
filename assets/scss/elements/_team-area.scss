@@ -616,12 +616,12 @@ p.disc {
             &::after{
                 position: absolute;
                 content: '';
-                left: 0;
+                right: 0;
                 bottom: 0;
-                width: 100%;
+                width: 0%;
                 height: 0%;
                 z-index: 0;
-                transition: .3s;
+                transition: .6s;
                 background: linear-gradient(180deg, rgba(17, 26, 46, 0) 0%, #111A2E 100%);  
             }
             img{
@@ -645,6 +645,9 @@ p.disc {
             &:hover{
                 &::after{
                     height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
                 }
                 .inner{
                     left: 30px;
@@ -681,10 +684,11 @@ p.disc {
         a{
             &.call-btn{
                 color: #fff;
-                background: #fff;
+                background: #EFEFFE !important;
                 svg{
                     path{
                         fill: #fff;
+                        transition: .3s
                     }
                 }
                 &::before{

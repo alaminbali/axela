@@ -332,6 +332,28 @@ header{
 
 .header-one{
     &.five{
+        a{
+            &.thumbnail{
+                .logo-1{
+                    display: block;
+                }
+                .logo-2{
+                    display: none;
+                }
+            }
+        }
+        &.sticky{
+            a{
+                &.thumbnail{
+                    .logo-1{
+                        display: none;
+                    }
+                    .logo-2{
+                        display: block;
+                    }
+                }
+            }
+        }
         .main-header .main-nav .mainmenu li a{
             color: #fff;
         }
@@ -375,7 +397,7 @@ header{
                         &.call-btn{
                             color: #fff;
                             transition: 0.3s;
-                            background: #fff !important;
+                            background: #EFEFFE !important;
                             &::before{
                                 background: var(--color-primary) !important;
                             }
@@ -411,3 +433,37 @@ header{
         }
     }
 }
+
+ul{
+    &.submenu{
+        box-shadow: 0px 7px 18px #1810100d;
+        &.home-mega{
+            display: flex !important;
+            align-items: center;
+            justify-content: flex-start;
+            width: 430px; 
+            .multiple{
+                width: 210px;
+                position: relative;
+                li{
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                &::after{
+                    position: absolute;
+                    right: 10px;
+                    height: 100%;
+                    background: #EBEBEB;
+                    width: 1px;
+                    content: '';
+                    top: 0;
+                }
+            }  
+            .single{
+                width: 220px;
+            }     
+        }
+    }
+}
+
+

@@ -29,6 +29,7 @@
             imJs.onePageNav();
             imJs.marqueActivation();
             imJs.wowActive();
+            imJs.mouseActive();
         },
         // done
         swiperActivation: function (){
@@ -628,10 +629,22 @@
           new WOW().init();
         },
 
+        mouseActive:function(){
+          
+          $('.li1').mousemove(function(e) {
+            $('span', this).css({
+              left: e.pageX - 200,
+              top: e.pageY - 4340
+            });
+          });          
+        }
+        
 
     }
   
     imJs.m();
-  })(jQuery, window)  
-
+  })(jQuery, window) 
   
+
+
+
