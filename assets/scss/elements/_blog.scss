@@ -103,7 +103,7 @@
         z-index: 1;
         img{
             border-radius: 20px 20px 0px 0px;
-            transition: .3s;
+            transition: 1s;
             width: 100%;
         }
         &:hover{
@@ -1077,7 +1077,7 @@
             max-width: 100%;
         }
         img{
-            transition: .3s;
+            transition: 1s;
             width: 441px;
             height: 290px;
             object-fit: cover;
@@ -1093,7 +1093,7 @@
     }
     .inner-area{
         margin-left: 30px;
-        padding: 40px 40px 40px 0;
+        padding: 40px 30px 40px 0;
         @media #{$large-mobile} {
             margin-left: 20px;
             padding: 20px 20px 20px 0;

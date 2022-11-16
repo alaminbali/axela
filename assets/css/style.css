@@ -12221,6 +12221,18 @@ Copyright (c) 2015 Daniel Eden
     transform: none;
   }
 }
+@keyframes fadeInUp2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
@@ -15875,7 +15887,7 @@ a.rts-read-more:hover i {
 }
 
 .banner-three-swiper .swiper-slide-active .title {
-  animation: fadeInUp 1.5s;
+  animation: fadeInUp2 1.5s;
 }
 
 .banner-three-swiper .swiper-slide-active a.rts-btn {
@@ -16115,6 +16127,9 @@ a.rts-read-more:hover i {
 .banner-five-content {
   display: flex;
   margin-top: 37%;
+}
+.banner-five-content .inner {
+  max-width: 700px;
 }
 .banner-five-content .inner .title {
   color: #fff;
@@ -17846,6 +17861,7 @@ p.disc {
 
 .team-single-digital {
   overflow: hidden;
+  position: relative;
 }
 .team-single-digital a.thumbnail {
   position: relative;
@@ -17858,11 +17874,12 @@ p.disc {
   content: "";
   right: 0;
   bottom: 0;
-  width: 0%;
-  height: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
   z-index: 0;
-  transition: 0.6s;
-  background: linear-gradient(180deg, rgba(17, 26, 46, 0) 0%, #111A2E 100%);
+  transition: 0.4s;
+  background: linear-gradient(180deg, #0000005d 0%, #000 100%);
 }
 .team-single-digital a.thumbnail img {
   width: 100%;
@@ -17883,10 +17900,11 @@ p.disc {
   color: rgba(255, 255, 255, 0.308);
 }
 .team-single-digital a.thumbnail:hover::after {
-  height: 100%;
+  right: 0;
+  bottom: 0;
   width: 100%;
-  top: 0;
-  left: 0;
+  height: 100%;
+  opacity: 0;
 }
 .team-single-digital a.thumbnail:hover .inner {
   left: 30px;
@@ -18512,10 +18530,11 @@ p.disc {
   overflow: hidden;
   display: block;
   position: relative;
+  cursor: url(../images/product/shape/zoom.png), auto;
 }
 .rts-product-area .thumbnail:hover img.img-1 {
-  -webkit-clip-path: inset(10px);
-  clip-path: inset(10px);
+  -webkit-clip-path: inset(15px);
+  clip-path: inset(15px);
 }
 .rts-product-area .thumbnail:hover .icon {
   position: absolute;
@@ -19015,7 +19034,7 @@ p.disc {
 }
 .blog-single-two-wrapper .thumbnail img {
   border-radius: 20px 20px 0px 0px;
-  transition: 0.3s;
+  transition: 1s;
   width: 100%;
 }
 .blog-single-two-wrapper .thumbnail:hover img {
@@ -19994,7 +20013,7 @@ p.disc {
   }
 }
 .rts-blog-area-h5-single a img {
-  transition: 0.3s;
+  transition: 1s;
   width: 441px;
   height: 290px;
   object-fit: cover;
@@ -20009,7 +20028,7 @@ p.disc {
 }
 .rts-blog-area-h5-single .inner-area {
   margin-left: 30px;
-  padding: 40px 40px 40px 0;
+  padding: 40px 30px 40px 0;
 }
 @media only screen and (max-width: 575px) {
   .rts-blog-area-h5-single .inner-area {
@@ -21707,5 +21726,35 @@ p.disc {
 }
 .mouse-hover .li1:hover span:hover {
   opacity: 0;
+}
+
+.tp-img-reveal-wrapper {
+  width: auto;
+  height: auto;
+}
+
+.rts-hover-wrapper {
+  border-radius: 10px;
+  display: inline-block;
+}
+.rts-hover-wrapper .rts-hover-title {
+  color: #fff !important;
+  margin-bottom: 6px;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 7px 20px;
+  background-color: rgba(0, 0, 0, 0.788);
+  margin-bottom: 3px;
+}
+.rts-hover-wrapper .rts-hover-subtitle {
+  color: #fff !important;
+  margin-bottom: 10px;
+  padding: 7px 20px;
+  background-color: rgba(0, 0, 0, 0.726);
+  font-size: 14px;
+  max-width: max-content;
+}
+.rts-hover-wrapper p {
+  display: none;
 }
 /*# sourceMappingURL=../maps/style.css.map */

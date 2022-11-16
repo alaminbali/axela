@@ -272,10 +272,11 @@
         overflow: hidden;
         display: block;
         position: relative;
+        cursor: url(../images/product/shape/zoom.png), auto;
         &:hover{
             img.img-1{
-                -webkit-clip-path: inset(10px);
-                clip-path: inset(10px);
+                -webkit-clip-path: inset(15px);
+                clip-path: inset(15px);
             }
             .icon{
                 position: absolute;
@@ -318,6 +319,9 @@
             .icon{
                 transform: translate(-50%, -50%) scale(1);
             }
+        }
+        &:hover{
+
         }
     }
     .inner{
