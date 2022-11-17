@@ -1071,7 +1071,6 @@
     a{
         display: block;
         overflow: hidden;
-        max-width: max-content;
         @media #{$sm-layout} {
             width: 100%;
             max-width: 100%;
@@ -1092,8 +1091,7 @@
         }
     }
     .inner-area{
-        margin-left: 30px;
-        padding: 40px 30px 40px 0;
+        padding: 40px 30px 40px 30px;
         @media #{$large-mobile} {
             margin-left: 20px;
             padding: 20px 20px 20px 0;

@@ -1,4 +1,8 @@
-
+header{
+    .active-dark{
+        display: none;
+    }
+}
 
 .header-one{
     position: absolute;
@@ -463,7 +467,75 @@ ul{
                 width: 220px;
             }     
         }
+        &.home-mega2{
+            width: 660px; 
+            left: -350px !important;
+            &::after{
+                display: none;
+            }
+            .multiple{
+                width: 210px;
+                position: relative;
+                
+                li{
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                &.last{
+                    &::after{
+                        display: none;
+                    }
+                }
+            }  
+            .single{
+                width: 220px;
+            }     
+        }
     }
 }
 
 
+header{
+    a{
+        .stickys{
+            display: none;
+        }
+    }
+    &.sticky{
+        a{
+            .normal{
+                display: none;
+            }
+            .stickys{
+                display: block;
+            }
+        }
+    }
+}
+
+.side-bar{
+    .logo-1{
+        display: block;
+    }
+    .logo-2{
+        display: none;
+    }
+}
+.header-one .main-header .main-nav .mainmenu li{
+    &.current{
+        a{
+            color: var(--color-primary) !important;
+        }
+    }
+}
+
+.header-one.five.sticky .mainmenu li a{
+    &:hover{
+        color: var(--color-primary) !important;
+    }
+}
+.header-one.five.sticky .mainmenu li.has-droupdown a{
+    &:hover{
+        color: var(--color-primary) !important;
+    }
+}

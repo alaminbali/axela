@@ -30,6 +30,7 @@
             imJs.marqueActivation();
             imJs.wowActive();
             imJs.mouseActive();
+            imJs.DarkLightActive();
         },
         // done
         swiperActivation: function (){
@@ -637,7 +638,41 @@
               top: e.pageY - 4340
             });
           });          
-        }
+        },
+
+        DarkLightActive:function(){
+            //Dark & Light jQuery
+            var rts_go_dark = $('.rts-go-dark');
+            if (rts_go_dark.length) {
+              let rtstheme = localStorage.getItem('rtstheme');
+              const godarkrts = document.querySelector('.rts-go-dark')
+              const golightrts = document.querySelector('.rts-go-light')    
+
+              const darkTheme = function () {
+                document.documentElement.classList.add('rts-dark');
+                localStorage.setItem('rtstheme', 'rts-dark');
+              }
+              const lightTheme = function () {
+                document.documentElement.classList.remove('rts-dark');
+                localStorage.setItem('rtstheme', 'light');
+              }
+              document.addEventListener('DOMContentLoaded', function () {
+                localStorage.getItem('rtstheme');
+                if (localStorage.rtstheme === 'rts-light') {
+                  lightTheme();
+                } else if (localStorage.rtstheme === 'rts-dark') {
+                  darkTheme();
+                }
+              });
+              godarkrts.addEventListener('click', function () {
+                darkTheme();
+              });
+              golightrts.addEventListener('click', function () {
+                lightTheme();
+              });
+            
+            }
+        },
         
 
     }

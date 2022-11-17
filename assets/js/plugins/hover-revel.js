@@ -39,7 +39,7 @@
         constructor(el) {
             this.DOM = {el: el};
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.DOM.reveal.innerHTML = `<div class="rts-img-reveal-wrapper__inner">
                 <div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img ? this.DOM.el.dataset.img: ''})">
                     <div class="rts-hover-wrapper"> 
@@ -147,7 +147,7 @@
         constructor(el) {
             this.DOM = {el: el};
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.DOM.reveal.innerHTML = `<div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
             this.DOM.el.appendChild(this.DOM.reveal);
             this.DOM.revealInner = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__inner');
@@ -238,7 +238,7 @@
         constructor(el) {
             this.DOM = {el: el};
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.DOM.reveal.style.overflow = 'hidden';
             this.DOM.reveal.innerHTML = `<div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
             this.DOM.el.appendChild(this.DOM.reveal);
@@ -350,7 +350,7 @@
         constructor(el) {
             this.DOM = {el: el};
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.DOM.reveal.innerHTML = `<div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
             this.DOM.el.appendChild(this.DOM.reveal);
             this.DOM.revealInner = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__inner');
@@ -457,12 +457,12 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
-            this.DOM.reveal.innerHTML = `<div class="tp-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
+            this.DOM.reveal.innerHTML = `<div class="rts-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
             this.DOM.el.appendChild(this.DOM.reveal);
             this.DOM.revealInner = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__inner');
             this.DOM.revealInner.style.overflow = 'hidden';
-            this.DOM.revealDeco = this.DOM.reveal.querySelector('.tp-img-reveal-wrapper__deco');
+            this.DOM.revealDeco = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__deco');
             this.DOM.revealImg = this.DOM.revealInner.querySelector('.rts-img-reveal-wrapper__img');
             charming(this.DOM.el);
             this.DOM.letters = [...this.DOM.el.querySelectorAll('span')];
@@ -567,13 +567,13 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.DOM.reveal.style.overflow = 'hidden';
-            this.DOM.reveal.innerHTML = `<div class="tp-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
+            this.DOM.reveal.innerHTML = `<div class="rts-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
             this.DOM.el.appendChild(this.DOM.reveal);
             this.DOM.revealInner = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__inner');
             this.DOM.revealInner.style.overflow = 'hidden';
-            this.DOM.revealDeco = this.DOM.reveal.querySelector('.tp-img-reveal-wrapper__deco');
+            this.DOM.revealDeco = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__deco');
             this.DOM.revealImg = this.DOM.revealInner.querySelector('.rts-img-reveal-wrapper__img');
 
             this.initEvents();
@@ -682,11 +682,11 @@
         constructor(el) {
             this.DOM = {el: el};
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
-            this.DOM.reveal.innerHTML = `<div class="tp-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
+            this.DOM.reveal.innerHTML = `<div class="rts-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
             this.DOM.el.appendChild(this.DOM.reveal);
             this.DOM.revealInner = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__inner');
-            this.DOM.revealDeco = this.DOM.reveal.querySelector('.tp-img-reveal-wrapper__deco');
+            this.DOM.revealDeco = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__deco');
             this.DOM.revealImg = this.DOM.revealInner.querySelector('.rts-img-reveal-wrapper__img');
             charming(this.DOM.el);
             this.DOM.letters = [...this.DOM.el.querySelectorAll('span')];
@@ -802,12 +802,12 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
-            this.DOM.reveal.innerHTML = `<div class="tp-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
+            this.DOM.reveal.innerHTML = `<div class="rts-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
             this.DOM.el.appendChild(this.DOM.reveal);
             this.DOM.revealInner = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__inner');
             this.DOM.revealInner.style.overflow = 'hidden';
-            this.DOM.revealDeco = this.DOM.reveal.querySelector('.tp-img-reveal-wrapper__deco');
+            this.DOM.revealDeco = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__deco');
             this.DOM.revealImg = this.DOM.revealInner.querySelector('.rts-img-reveal-wrapper__img');
             this.rect = this.DOM.reveal.getBoundingClientRect();
             charming(this.DOM.el);
@@ -912,12 +912,12 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
-            this.DOM.reveal.innerHTML = `<div class="tp-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
+            this.DOM.reveal.innerHTML = `<div class="rts-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
             this.DOM.el.appendChild(this.DOM.reveal);
             this.DOM.revealInner = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__inner');
             this.DOM.revealInner.style.overflow = 'hidden';
-            this.DOM.revealDeco = this.DOM.reveal.querySelector('.tp-img-reveal-wrapper__deco');
+            this.DOM.revealDeco = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__deco');
             this.DOM.revealImg = this.DOM.revealInner.querySelector('.rts-img-reveal-wrapper__img');
             charming(this.DOM.el);
             this.DOM.letters = [...this.DOM.el.querySelectorAll('span')];
@@ -1023,12 +1023,12 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
-            this.DOM.reveal.innerHTML = `<div class="tp-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
+            this.DOM.reveal.innerHTML = `<div class="rts-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
             this.DOM.el.appendChild(this.DOM.reveal);
             this.DOM.revealInner = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__inner');
             this.DOM.revealInner.style.overflow = 'hidden';
-            this.DOM.revealDeco = this.DOM.reveal.querySelector('.tp-img-reveal-wrapper__deco');
+            this.DOM.revealDeco = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__deco');
             this.DOM.revealImg = this.DOM.revealInner.querySelector('.rts-img-reveal-wrapper__img');
             charming(this.DOM.el);
             this.DOM.letters = [...this.DOM.el.querySelectorAll('span')];
@@ -1126,13 +1126,13 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.DOM.reveal.style.overflow = 'hidden';
-            this.DOM.reveal.innerHTML = `<div class="tp-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
+            this.DOM.reveal.innerHTML = `<div class="rts-img-reveal-wrapper__deco"></div><div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`;
             this.DOM.el.appendChild(this.DOM.reveal);
             this.DOM.revealInner = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__inner');
             this.DOM.revealInner.style.overflow = 'hidden';
-            this.DOM.revealDeco = this.DOM.reveal.querySelector('.tp-img-reveal-wrapper__deco');
+            this.DOM.revealDeco = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__deco');
             TweenMax.set(this.DOM.revealDeco, {
                 width: '1%',
                 height: '100%',
@@ -1260,16 +1260,16 @@
         constructor(el) {
             this.DOM = {el: el};
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper'; 
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper'; 
             this.totalDecos = 7;
             let inner = '';
             for (let i = 0; i <= this.totalDecos-1; ++i) {
-                inner += '<div class="tp-img-reveal-wrapper__deco"></div>';
+                inner += '<div class="rts-img-reveal-wrapper__deco"></div>';
             }
             inner += `<div class="rts-img-reveal-wrapper__inner"><div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div></div>`
             this.DOM.reveal.innerHTML = inner;
             this.DOM.el.appendChild(this.DOM.reveal);
-            this.DOM.revealDecos = [...this.DOM.reveal.querySelectorAll('.tp-img-reveal-wrapper__deco')];
+            this.DOM.revealDecos = [...this.DOM.reveal.querySelectorAll('.rts-img-reveal-wrapper__deco')];
             this.DOM.revealDecos.forEach((deco, pos) => {
                 TweenMax.set(deco, {
                     width: pos === this.totalDecos-1 ? '100%' : `${getRandomFloat(40,100)}%`,
@@ -1378,7 +1378,7 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.DOM.reveal.style.zIndex = -1;
             this.totalImages = 3;
             let inner = '';
@@ -1469,7 +1469,7 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             let inner = '';
             const imgsArr = this.DOM.el.dataset.img.split(',');
             for (let i = 0, len = imgsArr.length; i <= len-1; ++i ) {
@@ -1560,7 +1560,7 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.totalImages = 5;
             let inner = '';
             for (let i = 0; i <= this.totalImages-1; ++i) {
@@ -1661,7 +1661,7 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.totalImages = 10;
             let inner = '';
             for (let i = 0; i <= this.totalImages-1; ++i) {
@@ -1765,7 +1765,7 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.totalImages = 10;
             let inner = '';
             for (let i = 0; i <= this.totalImages-1; ++i) {
@@ -1869,7 +1869,7 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.totalImages = 10;
             let inner = '';
             for (let i = 0; i <= this.totalImages-1; ++i) {
@@ -1971,7 +1971,7 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.totalImages = 35;
             let inner = '';
             for (let i = 0; i <= this.totalImages-1; ++i) {
@@ -2076,7 +2076,7 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.totalImages = 10;
             let inner = '';
             for (let i = 0; i <= this.totalImages-1; ++i) {
@@ -2181,7 +2181,7 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.totalImages = 15;
             let inner = '';
             for (let i = 0; i <= this.totalImages-1; ++i) {
@@ -2292,7 +2292,7 @@
         constructor(el) {
             this.DOM = {el: el};
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.DOM.reveal.innerHTML = `<div class="rts-img-reveal-wrapper__img" style="background-image:url(${this.DOM.el.dataset.img})"><span class="rts-hover-subtitle">${this.DOM.el.dataset.subtitle ? this.DOM.el.dataset.subtitle: ''}</span> <h3 class="rts-hover-title">${this.DOM.el.dataset.title ? this.DOM.el.dataset.title: ''}</h3><p class="tp-hover-desc">${this.DOM.el.dataset.desc ? this.DOM.el.dataset.desc: ''}</p></div>`;
             this.DOM.el.appendChild(this.DOM.reveal);
             this.DOM.revealImg = this.DOM.reveal.querySelector('.rts-img-reveal-wrapper__img');
@@ -2387,7 +2387,7 @@
             this.DOM = {el: el};
             
             this.DOM.reveal = document.createElement('div');
-            this.DOM.reveal.className = 'tp-img-reveal-wrapper';
+            this.DOM.reveal.className = 'rts-img-reveal-wrapper';
             this.totalImages = 15;
             let inner = '';
             for (let i = 0; i <= this.totalImages-1; ++i) {
